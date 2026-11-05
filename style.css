@@ -5,10 +5,10 @@
 }
 
 :root{
-    --green: #4ADF86;
-    --darker-blue: #273549;
+    --green: #1bad55;
+    --darker-blue: #1d2736;
     --dark-blue: #2F3E53;
-    --white: white;
+    --white: rgb(236, 235, 235);
     --black: #1C1C1C;
 }
 
