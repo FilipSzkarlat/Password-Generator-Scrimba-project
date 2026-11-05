@@ -25,9 +25,9 @@ body{
 
 main{
     background-color: var(--darker-blue);
-    padding: 5em 2.5em;
+    padding: 5em 3em;
     border-radius: .5em;
-    width: 500px;
+    width: 600px;
 }
 
 h1{
