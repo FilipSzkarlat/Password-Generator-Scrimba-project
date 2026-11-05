@@ -12,7 +12,7 @@ function generatePassword(){
     let password1 = ''
     let password2 = ''
 
-    for( let i = 0; i < 10; i++ ){
+    for( let i = 0; i < 15; i++ ){
         password1 += randomCharacter()
     }
     for( let i = 0; i < 10; i++ ){
