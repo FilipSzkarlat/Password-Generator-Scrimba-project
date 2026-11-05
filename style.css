@@ -76,6 +76,9 @@ hr{
     width: 48%;
     height: 2.5em;
     border-radius: .25em;
+    color: var(--green);
+    text-shadow: 0 1px 5px var(--black);
+    font-size: 1.2em;
 }
 
 footer{
