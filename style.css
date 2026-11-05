@@ -58,6 +58,25 @@ h1{
     margin-block-end: 1.5em;
 }
 
+.input-container{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-block-end: 1.5em;
+}
+
+#password-length{
+    width: 4em;
+    padding: .25em;
+    border-radius: .25em;
+    border: none;
+    text-align: center;
+    color: var(--green);
+    font-weight: bold;
+    background-color: var(--dark-blue);
+    font-size: 1.1em;
+}
+
 #password-containers{
     display: flex;
     justify-content: space-between;
