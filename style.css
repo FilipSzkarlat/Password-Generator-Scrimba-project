@@ -4,3 +4,49 @@
     box-sizing: border-box;
 }
 
+:root{
+    --green: #4ADF86;
+    --darker-blue: #273549;
+    --dark-blue: #2F3E53;
+    --white: white;
+    --black: #1C1C1C;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    min-height: 100vh;
+}
+
+main{
+    background-color: var(--darker-blue);
+    padding: 4em 2em;
+    border-radius: .25em;
+}
+
+h1{
+    line-height: .75em;
+    font-size: 2.5em;
+}
+
+.highlight{
+    color: var(--green);
+    display: block;
+    line-height: 1em;
+    margin-block: 0 .25em;
+}
+
+.description{
+    margin-block: 0 1.5em;
+}
+
+footer{
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+}
