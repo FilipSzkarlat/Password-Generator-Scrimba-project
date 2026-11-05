@@ -69,11 +69,13 @@ hr{
 }
 
 .password-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--dark-blue);
     width: 48%;
     height: 2.5em;
     border-radius: .25em;
-    text-align: center;
 }
 
 footer{
