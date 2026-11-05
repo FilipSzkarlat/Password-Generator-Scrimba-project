@@ -4,18 +4,20 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 const password1El = document.getElementById('password-1')
 const password2El = document.getElementById('password-2')
 
+
 function randomCharacter(){
     return characters[Math.floor( Math.random() * characters.length)]
 }
 
 function generatePassword(){
+    const passwordLength = document.getElementById('password-length').value
     let password1 = ''
     let password2 = ''
 
-    for( let i = 0; i < 15; i++ ){
+    for( let i = 0; i < passwordLength; i++ ){
         password1 += randomCharacter()
     }
-    for( let i = 0; i < 10; i++ ){
+    for( let i = 0; i < passwordLength; i++ ){
         password2 += randomCharacter()
     }
     
