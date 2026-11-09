@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 const password1El = document.getElementById('password-1')
 const password2El = document.getElementById('password-2')
+let copyPasswordReady = false
 
 
 function randomCharacter(){
@@ -13,6 +14,7 @@ function generatePassword(){
     const passwordLength = document.getElementById('password-length').value
     let password1 = ''
     let password2 = ''
+    copyPasswordReady = true
 
     for( let i = 0; i < passwordLength; i++ ){
         password1 += randomCharacter()
@@ -24,3 +26,12 @@ function generatePassword(){
     password1El.textContent = password1
     password2El.textContent = password2
 }
+
+function copyPassword(element) {
+    if(copyPasswordReady) {
+        navigator.clipboard.writeText(document.getElementById(element).textContent)
+    }
+}
+
+
+// add logic for creating passwords between 6 and 20 characters
