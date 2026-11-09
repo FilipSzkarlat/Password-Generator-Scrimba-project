@@ -14,7 +14,13 @@ function generatePassword(){
     const passwordLength = document.getElementById('password-length').value
     let password1 = ''
     let password2 = ''
-    copyPasswordReady = true
+    
+    //When the password will be created the posibility to copy the password will be unblocked
+    if(!copyPasswordReady){
+        copyPasswordReady = true
+        password1El.classList.add('pointer')
+        password2El.classList.add('pointer')
+    }
 
     for( let i = 0; i < passwordLength; i++ ){
         password1 += randomCharacter()
