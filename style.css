@@ -10,6 +10,7 @@
     --dark-blue: #2F3E53;
     --white: rgb(236, 235, 235);
     --black: #1C1C1C;
+    --red: #ff0000;
 }
 
 body{
@@ -56,6 +57,16 @@ h1{
     font-size: 1.1em;
     cursor: pointer;
     margin-block-end: 1.5em;
+}
+
+.passwords-length-error{
+    color: var(--red);
+    font-weight: bold;
+    margin-block-end: 1.5em;
+}
+
+.hidden{
+    display: none;
 }
 
 .input-container{

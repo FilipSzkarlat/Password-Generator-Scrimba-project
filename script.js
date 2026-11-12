@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 const password1El = document.getElementById('password-1')
 const password2El = document.getElementById('password-2')
+const passwordsLengthErrorEl = document.querySelector('.passwords-length-error')
 let copyPasswordReady = false
 
 //Choose random character from the array
@@ -38,6 +39,8 @@ function generatePassword() {
 
     //Generate only passwords between 6 and 20 characters
     if(passwordLength > 5 && passwordLength < 21){
+        //hide error message
+        passwordsLengthErrorEl.classList.add('hidden')
         //Create a password
         let password = ''
             for( let i = 0; i < passwordLength; i++ ){
@@ -45,6 +48,9 @@ function generatePassword() {
         }
 
         return password
+    } else {
+        //show error message
+        passwordsLengthErrorEl.classList.remove('hidden')
     }
 
 
