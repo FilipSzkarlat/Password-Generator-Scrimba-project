@@ -35,13 +35,17 @@ function copyPassword(element) {
 function generatePassword() {
     //use the lenght number provided from the user or 15 by default
     const passwordLength = document.getElementById('password-length').value
-    let password = ''
-        for( let i = 0; i < passwordLength; i++ ){
-        password += randomCharacter()
+
+    //Generate only passwords between 6 and 20 characters
+    if(passwordLength > 5 && passwordLength < 21){
+        //Create a password
+        let password = ''
+            for( let i = 0; i < passwordLength; i++ ){
+            password += randomCharacter()
+        }
+
+        return password
     }
 
-    return password
+
 }
-
-
-// add logic for creating passwords between 6 and 20 characters
