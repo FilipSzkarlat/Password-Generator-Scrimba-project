@@ -60,9 +60,7 @@ function prepareArray() {
         customArray = customArray.filter(char => !symbols.includes(char))
     }
 }
-```js
-
-
+```
 ## Author
 
 - Website - [Filip Szkarlat Szczepaniak](https://filipszkarlatportfolio.netlify.app)
