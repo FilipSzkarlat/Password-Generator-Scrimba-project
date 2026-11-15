@@ -15,9 +15,19 @@
         <p class="description">Never use an insecure password again.</p>
         <button id="generate-btn" onclick="generate2Passwords()">Generate Password</button>
         <p class="hidden passwords-length-error">Please enter a password length between 6 and 20.</p>
-        <div class="input-container">
-            <label for="password-length">Password length (6-20):</label>
-            <input type="number" id="password-length" min="6" max="20" value="15">
+        <div class="input-containers">
+            <div class="input-container">
+                <label for="password-length">Password length (6-20):</label>
+                <input type="number" id="password-length" min="6" max="20" value="15">
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="include-symbols">
+                <label for="include-symbols">Include symbols</label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" id="include-numbers">
+                <label for="include-numbers">Include numbers</label>
+            </div>
         </div>
 
         <hr>
