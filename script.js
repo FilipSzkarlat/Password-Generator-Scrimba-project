@@ -67,20 +67,15 @@ function generatePassword() {
 
 //creating bigger or smaller array depends on the checked checkboxes
 function prepareArray() {
+    customArray = [...characters]
     if(includeNumbersEl.checked){
         //add numbers to array
         customArray.push(...numbers)
-    } else {
-        //remove numbers from array
-        customArray = customArray.filter(char => !numbers.includes(char))
     }
 
     if(includeSymbolsEl.checked){
         //add symbols to array
         customArray.push(...symbols)
-    } else{
-        //remove symbols from array
-        customArray = customArray.filter(char => !symbols.includes(char))
     }
 
 }
